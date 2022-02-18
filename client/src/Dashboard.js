@@ -5,9 +5,9 @@ import SpotifyWebApi from "spotify-web-api-node";
 import TrackSearchResult from "./TrackSearchResult";
 import Player from "./Player";
 import axios from "axios";
-
+import { secrets } from "./.secrets.js";
 const spotifyApi = new SpotifyWebApi({
-  clientId: "464c159eec384440a341ec02c501da87",
+  clientId: secrets.CLIENT_ID,
 });
 
 export default function Dashboard({ code }) {
